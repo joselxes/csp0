@@ -1,0 +1,25 @@
+{%extends "searchs/layout.html" %}
+{% block head %}
+<TItle>Image search</TItle>
+{% endblock %}
+
+{% block body%}
+
+<div id="reference">
+        <a href="{% url 'searchs:index' %}"> Return Main Search</a>
+</div>
+
+    <h1>Images Search</h1>
+    <div id="fstyle">
+
+
+    <form action="{% url 'searchs:img' %}" method="post"> 
+        {% csrf_token %}
+        {{ search }}
+        <input id="runbtn" type="submit">
+    </form>
+    </div>
+
+
+
+{% endblock %}

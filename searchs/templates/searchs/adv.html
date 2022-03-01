@@ -1,0 +1,23 @@
+{%extends "searchs/layout.html" %}
+{% block head %}
+<TItle>Advanced search</TItle>
+{% endblock %}
+
+
+
+{% block body%}
+
+    <div id="reference">
+        <a href="{% url 'searchs:index' %}"> Return Main Search</a>
+    </div>
+    
+    <h1>Advance Search</h1>
+    <div id="fstyle">
+    <form  action="{% url 'searchs:adv' %}" method="post"> 
+        {% csrf_token %}
+        {{ search.as_ul }}
+        <!-- {{ search }}z -->
+        <input id="runbtn" type="submit">
+    </form>
+    </div>
+{% endblock body %}
