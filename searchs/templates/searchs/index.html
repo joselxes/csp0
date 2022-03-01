@@ -10,15 +10,18 @@
         <a style="top:20px" href="{% url 'searchs:adv' %}"> Advanced Search </a>
     </div>
     <h1>Search</h1>
+    <div id="Sbut">
     <div id="fstyle">
     <form action="{% url 'searchs:index' %}" method="post"> 
 
         {% csrf_token %}
         {{ search }}
-        <center>
-        <input id="runbtn" type="submit" name="btnA" value="Search">
-        <input id="runbtn" type="submit" name="btnI" value="I am Feeling Lucky" class="button">
-    </center>
+        <!-- <center> -->
+        <div id="Sbut">
+            <input id="runbtn" type="submit" name="btnA" value="Google Search">
+            <input id="runbtn" type="submit" name="btnI" value="I’m Feeling Lucky" class="button">
+        </div>
+    <!-- </center> -->
     </form>
     </div>
 

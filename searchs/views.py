@@ -19,10 +19,10 @@ class NewTaskForm(forms.Form):
 class RegSearchForm(forms.Form):
     q = forms.CharField(label="Search")    
 class AdvSearchForm(forms.Form):
-    q = forms.CharField(label="Search")    
-    q1 = forms.CharField(label="Find these words")    
-    q2 = forms.CharField(label="Some exact prhase")    
-    q3 = forms.CharField(label="Any of these words")    
+    q = forms.CharField(label="All these words           ")    
+    q1 = forms.CharField(label="This exact word or phrase")    
+    q2 = forms.CharField(label="Any of these words       ")    
+    q3 = forms.CharField(label="None of these words      ")    
     # priority = forms.IntegerField(label="Priority", min_value=1,max_value=8)
 def index(request):
     search= RegSearchForm()

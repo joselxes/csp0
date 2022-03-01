@@ -10,7 +10,9 @@ h1{
     position: absolute;
     right: 0px;
 }
-
+#Sbut{
+    text-align: center;
+}
 #runbtn {
     color: #ffffff;
     background-color: rgb(95, 97, 209);    
@@ -27,14 +29,17 @@ label{
     text-align:center;}
 input{
     text-align:center;
-width: 80%;
+width: 60%;
 height: 30px;    
 margin: 5px 30px;
 border-radius: 10px;
 border: none;
 margin-bottom: 20px;
 margin-top: 20px;
+align: center;
 }
+
+
 
 #fstyle {
     width: auto;
@@ -51,7 +56,7 @@ a:hover {color:#1f5015;
 #runbtn:hover{
     background-color: #04AA6D;
     color: white;
-    width: 153px;
+
 }
 h1 { color: #352929; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px; }
 
